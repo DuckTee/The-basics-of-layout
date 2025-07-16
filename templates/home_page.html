@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hom</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 sidebar d-flex flex-column bg-dark p-4 vh-100 sticky-top">
+            <!-- Основное меню -->
+            <div>
+                <h4 class="text-white mb-4">Меню</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a class="nav-link active bg-primary text-white rounded" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white hover-bg-primary rounded" href="#">Категории</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white hover-bg-primary rounded" href="#">Заказы</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white hover-bg-primary rounded" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Блок пользователя (прижимается к низу) -->
+            <div class="mt-auto pt-4 border-top border-secondary">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="" class="rounded-circle me-3" alt="Аватар">
+                    <div>
+                        <div class="text-white fw-bold">Имя Пользователя</div>
+                        <small class="text-white-50">user@example.com</small>
+                    </div>
+                </div>
+                <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-outline-light btn-sm">Профиль</a>
+                    <a href="#" class="btn btn-outline-danger btn-sm">Выйти</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Основной контент -->
+        <div class="col-md-9 pt-5 ps-lg-5 text-center">
+            <h1 class="content-center mb-4">Главная</h1>
+            <p class="lead text-center mb-5">Вы находитесь на сайте, предназначенном для продажи товаров.</p>
+
+            <div class="row">
+                <!-- Карточка 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            Товар 1
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">$100</h5>
+                            <p class="card-text">10 пользователей<br>2GB хранилища<br>Поддержка по email</p>
+                            <a href="#" class="col-12 btn btn-outline-primary mx-auto">Купить</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="col-md-4 mb-4 ">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            Товар 2
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">$100</h5>
+                            <p class="card-text">10 пользователей<br>2GB хранилища<br>Поддержка по email</p>
+                            <a href="#" class="col-12 btn btn-outline-primary mx-auto">Купить</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-header">
+                            Товар 3
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">$100</h5>
+                            <p class="card-text">10 пользователей<br>2GB хранилища<br>Поддержка по email</p>
+                            <a href="#" class="col-12 btn btn-outline-primary mx-auto">Купить</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

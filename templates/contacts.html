@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hom</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 sidebar d-flex flex-column bg-dark p-4 vh-100 sticky-top">
+            <!-- Основное меню -->
+            <div>
+                <h4 class="text-white mb-4">Меню</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a class="nav-link active bg-primary text-white rounded" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white hover-bg-primary rounded" href="#">Категории</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white hover-bg-primary rounded" href="#">Заказы</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white hover-bg-primary rounded" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Блок пользователя (прижимается к низу) -->
+            <div class="mt-auto pt-4 border-top border-secondary">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="" class="rounded-circle me-3" alt="Аватар">
+                    <div>
+                        <div class="text-white fw-bold">Имя Пользователя</div>
+                        <small class="text-white-50">user@example.com</small>
+                    </div>
+                </div>
+                <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-outline-light btn-sm">Профиль</a>
+                    <a href="#" class="btn btn-outline-danger btn-sm">Выйти</a>
+                </div>
+            </div>
+        </div>
+        <!-- Основной контент -->
+        <div class="col-md-9 pt-5 ps-lg-5 text-center">
+            <h1 class="content-center mb-4">Контакты</h1>
+
+            <div class="row justify-content-center">
+
+                <!-- Блок с формой -->
+                <div class="col-lg-6 pt-5">
+                    <div class="contact-form bg-light p-4 rounded ">
+                        <form>
+                            <div class="row g-2">
+                                <div class="col-md-12">
+                                    <div class="col-1">
+                                        <label for="name" class="form-label">Имя</label>
+                                    </div>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="col-1">
+                                        <label for="email" class="form-label">Почта</label>
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-text">@</span>
+                                        <input type="email" class="form-control" id="email">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="col-2">
+                                        <label for="message" class="form-label text-start">Сообщение</label>
+                                    </div>
+                                    <textarea class="form-control" id="message" rows="3"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="agree">
+                                        <label class="form-check-label" for="agree">
+                                            Я согласен на обработку персональных данных
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary">Отправить</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- Блок с контактной информацией -->
+                <div class="col-lg-5 mb-4 mb-lg-0 pt-5" style="text-align: left;">
+                    <!-- Добавлен mb-lg-0 чтобы убрать отступ на больших экранах -->
+                    <h2 class="mb-3">Наши контакты</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum.</p>
+
+                    <p>While these feedback styles cannot be styled with CSS, you can still customize the feedback text
+                        through JavaScript</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

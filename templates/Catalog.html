@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hom</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2 sidebar d-flex flex-column bg-dark p-4 vh-100 sticky-top">
+            <!-- Основное меню -->
+            <div>
+                <h4 class="text-white mb-4">Меню</h4>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                        <a class="nav-link active bg-primary text-white rounded" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white hover-bg-primary rounded" href="#">Категории</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white hover-bg-primary rounded" href="#">Заказы</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                        <a class="nav-link text-white hover-bg-primary rounded" href="#">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Блок пользователя (прижимается к низу) -->
+            <div class="mt-auto pt-4 border-top border-secondary">
+                <div class="d-flex align-items-center mb-3">
+                    <img src="" class="rounded-circle me-3" alt="Аватар">
+                    <div>
+                        <div class="text-white fw-bold">Имя Пользователя</div>
+                        <small class="text-white-50">user@example.com</small>
+                    </div>
+                </div>
+                <div class="d-grid gap-2">
+                    <a href="#" class="btn btn-outline-light btn-sm">Профиль</a>
+                    <a href="#" class="btn btn-outline-danger btn-sm">Выйти</a>
+                </div>
+            </div>
+        </div>
+        <!-- Основной контент -->
+        <div class="col-md-10 p-4 mb-5">
+            <h1 class="text-center mb-5">Каталог</h1>
+
+            <div class="row row-cols-1 row-cols-md-2 g-3 mb-5 content-center mt-5">
+                <!-- Карточка 1 -->
+                <div class="col d-flex justify-content-center">
+                    <div class="card h-100" style="width: 90%; max-width: 500px;">
+                        <img src="https://n1s1.hsmedia.ru/f7/c3/00/f7c30039268098b668483a6d7350599f/728x485_1_4bf8f4400fd26b4aee476f18a05b229f@1500x1000_0xPYO24BX5_8952857133823222684.jpg.webp"
+                             class="card-img-top" alt="Товар" style="height: 260px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-sm btn-outline-secondary">View</a>
+                                        <a href="#" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="col d-flex justify-content-center">
+                    <div class="card h-100" style="width: 90%; max-width: 500px;">
+                        <img src="https://n1s1.hsmedia.ru/f7/c3/00/f7c30039268098b668483a6d7350599f/728x485_1_4bf8f4400fd26b4aee476f18a05b229f@1500x1000_0xPYO24BX5_8952857133823222684.jpg.webp"
+                             class="card-img-top" alt="Товар" style="height: 260px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-sm btn-outline-secondary">View</a>
+                                        <a href="#" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="col d-flex justify-content-center">
+                    <div class="card h-100" style="width: 90%; max-width: 500px;">
+                        <img src="https://n1s1.hsmedia.ru/f7/c3/00/f7c30039268098b668483a6d7350599f/728x485_1_4bf8f4400fd26b4aee476f18a05b229f@1500x1000_0xPYO24BX5_8952857133823222684.jpg.webp"
+                             class="card-img-top" alt="Товар" style="height: 260px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-sm btn-outline-secondary">View</a>
+                                        <a href="#" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 4 -->
+                <div class="col d-flex justify-content-center">
+                    <div class="card h-100" style="width: 90%; max-width: 500px;">
+                        <img src="https://n1s1.hsmedia.ru/f7/c3/00/f7c30039268098b668483a6d7350599f/728x485_1_4bf8f4400fd26b4aee476f18a05b229f@1500x1000_0xPYO24BX5_8952857133823222684.jpg.webp"
+                             class="card-img-top" alt="Товар" style="height: 260px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-sm btn-outline-secondary">View</a>
+                                        <a href="#" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 5 -->
+                <div class="col d-flex justify-content-center">
+                    <div class="card h-100" style="width: 90%; max-width: 500px;">
+                        <img src="https://n1s1.hsmedia.ru/f7/c3/00/f7c30039268098b668483a6d7350599f/728x485_1_4bf8f4400fd26b4aee476f18a05b229f@1500x1000_0xPYO24BX5_8952857133823222684.jpg.webp"
+                             class="card-img-top" alt="Товар" style="height: 260px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-sm btn-outline-secondary">View</a>
+                                        <a href="#" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 6 -->
+                <div class="col d-flex justify-content-center">
+                    <div class="card h-100" style="width: 90%; max-width: 500px;">
+                        <img src="https://n1s1.hsmedia.ru/f7/c3/00/f7c30039268098b668483a6d7350599f/728x485_1_4bf8f4400fd26b4aee476f18a05b229f@1500x1000_0xPYO24BX5_8952857133823222684.jpg.webp"
+                             class="card-img-top" alt="Товар" style="height: 260px; object-fit: cover;">
+                        <div class="card-body d-flex flex-column">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group">
+                                        <a href="#" class="btn btn-sm btn-outline-secondary">View</a>
+                                        <a href="#" class="btn btn-sm btn-outline-secondary">Edit</a>
+                                    </div>
+                                    <small class="text-muted">9 mins</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
